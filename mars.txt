@@ -1,3 +1,12 @@
+this is the original mars file.
+
+
+
+cold and dry but everythig is my favoritye bolor.
+The two moons may be aproblem for Wolfm
+
+
+
 Last login: Tue Mar  9 07:10:40 on ttys001
 (base) kgcamp@PW48-WG-KGCMAC ~ % bash
 

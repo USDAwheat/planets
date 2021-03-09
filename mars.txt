@@ -1,0 +1,230 @@
+Last login: Tue Mar  9 07:10:40 on ttys001
+(base) kgcamp@PW48-WG-KGCMAC ~ % bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ gitbash
+bash: gitbash: command not found
+bash-3.2$ pwd
+/Users/kgcamp
+bash-3.2$ cd Desktop
+bash-3.2$ pwd
+/Users/kgcamp/Desktop
+bash-3.2$ ls
+2021budget planning for CRIS 02.15.21.xlsx
+2021budget planning for CRIS 02.18.21.xlsx
+2021budget planning for CRIS 02.19.21.xlsx
+2021budget planning for CRIS 02.19.21a.xlsx
+Documents alias
+FCRmanfin_BMCv5tim_Kimcorrected
+FCRmanfin_BMCv5tim_Kimcorrected.docx
+FN workshop
+PUBLISHING PIPELINE.xlsx
+Quotes of Thomas Merton.pdf
+READ
+Response to Edits tim Kim corrected
+Response to Edits tim Kim corrected.docx
+Tassel5PipelineCLI.pdf
+Thumbs.db
+WGC Jan 2021.pptx
+alias Dropbox
+data
+data-shell
+stripe rust fhb2018.pptx
+tassel-5-standalone
+working documents alias
+xThomasMertonTheSevenStoryMountain.pdf
+~$2018-2014_SWW_summary.xlsx
+~$oberg, S.M. Letter to Associate Editor Kim edits.docx
+~$oberg,_S.M._Crop_Science_Resubmission kim edits.docx
+~$pritchett rack card.xlsx
+bash-3.2$ git config --global username "USDAwheat"
+error: key does not contain a section: username
+bash-3.2$ git config --global user.name "USDAwheat"
+bash-3.2$ git config --global core.autocrlf input
+bash-3.2$ git config --global.core.editor "nano -w"
+error: unknown option `global.core.editor'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+bash-3.2$ git config --list
+credential.helper=osxkeychain
+user.name=USDAwheat
+core.autocrlf=input
+bash-3.2$ git config -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+bash-3.2$ mkdir planets
+bash-3.2$ ls
+2021budget planning for CRIS 02.15.21.xlsx		Thumbs.db
+2021budget planning for CRIS 02.18.21.xlsx		WGC Jan 2021.pptx
+2021budget planning for CRIS 02.19.21.xlsx		alias Dropbox
+2021budget planning for CRIS 02.19.21a.xlsx		data
+Documents alias						data-shell
+FCRmanfin_BMCv5tim_Kimcorrected				planets
+FCRmanfin_BMCv5tim_Kimcorrected.docx			stripe rust fhb2018.pptx
+FN workshop						tassel-5-standalone
+PUBLISHING PIPELINE.xlsx				working documents alias
+Quotes of Thomas Merton.pdf				xThomasMertonTheSevenStoryMountain.pdf
+READ							~$2018-2014_SWW_summary.xlsx
+Response to Edits tim Kim corrected			~$oberg, S.M. Letter to Associate Editor Kim edits.docx
+Response to Edits tim Kim corrected.docx		~$oberg,_S.M._Crop_Science_Resubmission kim edits.docx
+Tassel5PipelineCLI.pdf					~$pritchett rack card.xlsx
+bash-3.2$ cd planets
+bash-3.2$ pwd
+/Users/kgcamp/Desktop/planets
+bash-3.2$ ls
+bash-3.2$ git init
+Initialized empty Git repository in /Users/kgcamp/Desktop/planets/.git/
+bash-3.2$ ls
+bash-3.2$ ls -a
+.	..	.git
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+bash-3.2$ mkdir moons
+bash-3.2$ git init
+Reinitialized existing Git repository in /Users/kgcamp/Desktop/planets/.git/
+bash-3.2$ ls -a
+.	..	.git	moons
+bash-3.2$ cd moons
+bash-3.2$ git init
+Initialized empty Git repository in /Users/kgcamp/Desktop/planets/moons/.git/
+bash-3.2$ ls -a
+.	..	.git
+bash-3.2$ rem -rf .git
+bash: rem: command not found
+bash-3.2$ rmdir moons
+rmdir: moons: No such file or directory
+bash-3.2$ cd planets
+bash: cd: planets: No such file or directory
+bash-3.2$ cd ..
+bash-3.2$ pwd
+/Users/kgcamp/Desktop/planets
+bash-3.2$ rm moons
+rm: moons: is a directory
+bash-3.2$ rmdir moons
+rmdir: moons: Directory not empty
+bash-3.2$ ls
+moons
+bash-3.2$ cd moons
+bash-3.2$ pwd
+/Users/kgcamp/Desktop/planets/moons
+bash-3.2$ rm .git
+rm: .git: is a directory
+bash-3.2$ rmdir .git
+rmdir: .git: Directory not empty
+bash-3.2$ pwd
+/Users/kgcamp/Desktop/planets/moons
+bash-3.2$ cd..
+bash: cd..: command not found
+bash-3.2$ cd ..
+bash-3.2$ pwd
+/Users/kgcamp/Desktop/planets
+bash-3.2$ nano mars.txt
+
+  GNU nano 2.0.6                          File: mars.txt                                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help        ^O WriteOut        ^R Read File       ^Y Prev Page       ^K Cut Text        ^C Cur Pos
+^X Exit            ^J Justify         ^W Where Is        ^V Next Page       ^U UnCut Text      ^T To Spell
